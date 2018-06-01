@@ -35,6 +35,7 @@ class App extends Component {
           title={ this.state.selectedMadLib.title }
           text={ this.state.selectedMadLib.getText() }
           />
+          
       </section>
     );
   }
