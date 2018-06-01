@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MadLibs from './madlibs/MadLibs.js';
 import Story from './components/Story.js';
+import WackyInput from './components/WackyInput.js';
 
 class App extends Component {
   constructor() {
@@ -35,7 +36,7 @@ class App extends Component {
           title={ this.state.selectedMadLib.title }
           text={ this.state.selectedMadLib.getText() }
           />
-          
+          <WackyInput words={this.state.selectedMadLib.words}/>
       </section>
     );
   }
